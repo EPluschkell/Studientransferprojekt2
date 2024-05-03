@@ -3,9 +3,19 @@ import java.util.Comparator;
 
 public abstract class ItemList {
 
-    private ArrayList<Item> itemList;
+    protected ArrayList<Item> itemList;
+    
+    public ItemList() {
+        this.itemList = new ArrayList<>();
+    }
 
+    public void add(Item item){
+        itemList.add(item);
+    }
 
+    public void remove(Item item){
+        itemList.remove(item);
+    }
 
     public void sortByName() {
         itemList.sort(new Comparator<Item>() {
