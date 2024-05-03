@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="small implementation to begin">
-      <change afterPath="$PROJECT_DIR$/src/NonPerishableList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PerishableList.java" afterDir="false" />
+    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="List classes implementations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pantry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pantry.java" afterDir="false" />
     </list>
@@ -80,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714742119226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="List classes implementations">
+      <created>1714745049156</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714745049156</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +103,7 @@
     <MESSAGE value="a" />
     <MESSAGE value="added new classes" />
     <MESSAGE value="small implementation to begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="small implementation to begin" />
+    <MESSAGE value="List classes implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="List classes implementations" />
   </component>
 </project>

@@ -3,7 +3,8 @@ public class Pantry {
     NonPerishableList nonPerishableList;
 
     public Pantry(){
-
+        perishableList= new PerishableList();
+        nonPerishableList=new NonPerishableList();
     }
 
     public void addPerishable(PerishableFood food){
