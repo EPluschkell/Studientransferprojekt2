@@ -1,6 +1,4 @@
 import java.time.LocalDate;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class PerishableFood extends Item{
 
@@ -13,12 +11,14 @@ public class PerishableFood extends Item{
     public PerishableFood(String name, int quantity, LocalDate bestBefore, Boolean isGram){
         super(name, quantity,bestBefore);
         this.isGram=isGram;
+        this.isOpen = false;
         calculateExpiredStatus();
     }
 
     public PerishableFood(){
         super("default",500,LocalDate.now());
         this.isGram=true;
+        this.isOpen = false;
         calculateExpiredStatus();
     }
 
