@@ -1,35 +1,35 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public abstract class ItemList {
+public abstract class ItemList<T extends Item> {
 
-    protected ArrayList<Item> itemList;
-    
+    protected ArrayList<T> itemList;
+
     public ItemList() {
         this.itemList = new ArrayList<>();
     }
 
-    public void add(Item item){
+    public void add(T item){
         itemList.add(item);
     }
 
-    public void remove(Item item){
+    public void remove(T item){
         itemList.remove(item);
     }
 
     public void sortByName() {
-        itemList.sort(new Comparator<Item>() {
+        itemList.sort(new Comparator<T>() {
             @Override
-            public int compare(Item item1, Item item2) {
+            public int compare(T item1, T item2) {
                 return item1.name.compareTo(item2.name);
             }
         });
     }
 
         public void sortByMHD() {
-            itemList.sort(new Comparator<Item>() {
+            itemList.sort(new Comparator<T>() {
                 @Override
-                public int compare(Item item1, Item item2) {
+                public int compare(T item1, T item2) {
                     return item1.bestBeforeDate.compareTo(item2.bestBeforeDate);
                 }
             });

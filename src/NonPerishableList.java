@@ -1,10 +1,7 @@
-public class NonPerishableList extends ItemList{
+public class NonPerishableList extends ItemList<NonPerishable>{
 
     public NonPerishableList(){
         super();
     }
 
-    public void add(NonPerishable nonPerishable){
-        itemList.add(nonPerishable);
-    }
 }

@@ -1,14 +1,6 @@
-import java.util.ArrayList;
-
-public class PerishableList extends ItemList{
-
-
+public class PerishableList extends ItemList<PerishableFood>{
 
     public PerishableList(){
         super();
-    }
-
-    public void add(PerishableFood perishableFood){
-        itemList.add(perishableFood);
     }
 }
