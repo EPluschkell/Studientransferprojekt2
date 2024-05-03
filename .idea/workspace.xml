@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="added new classes">
-      <change afterPath="$PROJECT_DIR$/src/ItemList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pantry.java" afterDir="false" />
+    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="small implementation to begin">
+      <change afterPath="$PROJECT_DIR$/src/NonPerishableList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PerishableList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PerishableFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PerishableFood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pantry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pantry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714740140240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="small implementation to begin">
+      <created>1714742119226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714742119226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="added new classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new classes" />
+    <MESSAGE value="small implementation to begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="small implementation to begin" />
   </component>
 </project>
