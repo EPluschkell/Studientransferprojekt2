@@ -8,15 +8,20 @@ public class PerishableFood extends Item{
 
     private Boolean isExpired;
 
+    private LocalDate bestBeforeDate;
+
     public PerishableFood(String name, int quantity, LocalDate bestBefore, Boolean isGram){
-        super(name, quantity,bestBefore);
+        super(name, quantity);
+        this.bestBeforeDate=bestBefore;
         this.isGram=isGram;
         this.isOpen = false;
         calculateExpiredStatus();
     }
-
+    
+    // default constructor
     public PerishableFood(){
-        super("default",500,LocalDate.now());
+        super("default",500);
+        this.bestBeforeDate=LocalDate.now();
         this.isGram=true;
         this.isOpen = false;
         calculateExpiredStatus();
@@ -32,6 +37,10 @@ public class PerishableFood extends Item{
 
     public void calculateExpiredStatus(){
         isExpired = daysBetweenDates(LocalDate.now(), bestBeforeDate)<0;
+    }
+
+    public LocalDate getBestBeforeDate() {
+        return bestBeforeDate;
     }
 
     public static long daysBetweenDates(LocalDate date1, LocalDate date2) {

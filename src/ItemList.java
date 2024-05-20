@@ -25,14 +25,5 @@ public abstract class ItemList<T extends Item> {
             }
         });
     }
-
-        public void sortByMHD() {
-            itemList.sort(new Comparator<T>() {
-                @Override
-                public int compare(T item1, T item2) {
-                    return item1.bestBeforeDate.compareTo(item2.bestBeforeDate);
-                }
-            });
-        }
-    }
+}
 
