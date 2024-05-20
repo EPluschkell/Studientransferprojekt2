@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="set class variables private, getters added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemList.java" afterDir="false" />
+    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="sql methods added to main class, some toStrings added for easier testing.">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NonPerishable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NonPerishable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716198972342</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sql methods added to main class, some toStrings added for easier testing.">
+      <created>1716200953268</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716200953268</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +144,7 @@
     <MESSAGE value="List classes implementations" />
     <MESSAGE value="contstructor" />
     <MESSAGE value="set class variables private, getters added" />
-    <option name="LAST_COMMIT_MESSAGE" value="set class variables private, getters added" />
+    <MESSAGE value="sql methods added to main class, some toStrings added for easier testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="sql methods added to main class, some toStrings added for easier testing." />
   </component>
 </project>

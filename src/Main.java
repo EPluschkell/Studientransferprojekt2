@@ -7,7 +7,26 @@ public class Main {
         System.out.println("Hello world!");
     }
 
-    public static void savePerishable(PerishableList list, String url,String tableName){
+    public static void savePerishableFood(PerishableFood food,String url, String tableName){
+        var sql="INSERT INTO "+tableName+"(name,quantity,bestbeforedate,isOpen,isGram) VALUES(?,?,?,?,?)";
+        try (var conn = DriverManager.getConnection(url);
+             var pstmt = conn.prepareStatement(sql)) {
+
+                //pstmt.setInt(1,i);
+                pstmt.setString(1,food.getName());
+                pstmt.setInt(2,food.getQuantity());
+                pstmt.setDate(3, Date.valueOf(food.getBestBeforeDate()));
+                pstmt.setBoolean(4,food.getOpen());
+                pstmt.setBoolean(5,food.getGram());
+                pstmt.executeUpdate();
+
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    public static void savePerishableList(PerishableList list, String url,String tableName){
         var sql="INSERT INTO "+tableName+"(name,quantity,bestbeforedate,isOpen,isGram) VALUES(?,?,?,?,?)";
         try (var conn = DriverManager.getConnection(url);
              var pstmt = conn.prepareStatement(sql)) {
