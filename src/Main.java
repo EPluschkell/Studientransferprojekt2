@@ -83,6 +83,8 @@ public class Main {
         savePerishableList(list,url,tableName);
     }
 
+
+    //this does not work correctly yet, not sure why
     public static void deleteFromTable(String name, String url, String tableName){
         var sql = "DELETE FROM "+tableName+" WHERE name LIKE '%"+name+"%'";
         try (var conn = DriverManager.getConnection(url);
