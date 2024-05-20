@@ -54,7 +54,7 @@ public class Main {
 
             while (rs.next()) {
                 list.add(new PerishableFood(rs.getString("name"),rs.getInt("quantity"),rs.getDate("bestbeforedate").toLocalDate(),rs.getBoolean("isGram")));
-                if (rs.getBoolean("isOpen"))list.itemList.getLast().openContainer();
+                if (rs.getBoolean("isOpen")){list.itemList.getLast().openContainer();}
                 System.out.printf("%-5s%-25s%-10s%n",
                         rs.getString("name"),
                         rs.getInt("quantity"),
@@ -85,7 +85,7 @@ public class Main {
 
 
     //this does not work correctly yet, not sure why
-    public static void deleteFromTable(String name, String url, String tableName){
+    /*public static void deleteFromTable(String name, String url, String tableName){
         var sql = "DELETE FROM "+tableName+" WHERE name LIKE '%"+name+"%'";
         try (var conn = DriverManager.getConnection(url);
              var pstmt = conn.prepareStatement(sql)) {
@@ -98,7 +98,7 @@ public class Main {
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
-    }
+    }*/
     public static void deleteFromTable(int index, String url, String tableName){
         var sql = "DELETE FROM "+tableName+" WHERE id = ?";
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="sql methods added to main class, some toStrings added for easier testing.">
+    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="quick comment for clarification">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -131,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716201276600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="more sql methods, delete">
+      <created>1716203254702</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716203254702</updated>
+    </task>
+    <task id="LOCAL-00011" summary="quick comment for clarification">
+      <created>1716203320979</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716203320979</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +167,8 @@
     <MESSAGE value="contstructor" />
     <MESSAGE value="set class variables private, getters added" />
     <MESSAGE value="sql methods added to main class, some toStrings added for easier testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="sql methods added to main class, some toStrings added for easier testing." />
+    <MESSAGE value="more sql methods, delete" />
+    <MESSAGE value="quick comment for clarification" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick comment for clarification" />
   </component>
 </project>
