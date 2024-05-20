@@ -27,12 +27,20 @@ public class PerishableFood extends Item{
         calculateExpiredStatus();
     }
 
-    public void Open(){
+    public void openContainer(){
         isOpen=true;
     }
 
     public Boolean getExpired() {
         return isExpired;
+    }
+
+    public Boolean getGram() {
+        return isGram;
+    }
+
+    public Boolean getOpen() {
+        return isOpen;
     }
 
     public void calculateExpiredStatus(){
@@ -56,11 +64,11 @@ public class PerishableFood extends Item{
         long timeLeft = daysBetweenDates(LocalDate.now(), bestBeforeDate);
 
         if(timeLeft<0){
-            return name + " mit Ablaufdatum "+ bestBeforeDate +" ist abgelaufen. "+ quantity +unit+", "+isOpenString;
+            return getName() + " mit Ablaufdatum "+ bestBeforeDate +" ist abgelaufen. "+ getQuantity() +unit+", "+isOpenString;
         } else if (timeLeft == 0) {
-            return name + " mit Ablaufdatum "+ bestBeforeDate +" läuft heute ab. "+ quantity +unit+", "+isOpenString;
+            return getName() + " mit Ablaufdatum "+ bestBeforeDate +" läuft heute ab. "+ getQuantity() +unit+", "+isOpenString;
         }
-        return name + " mit Ablaufdatum "+ bestBeforeDate +", "+timeLeft+" Tage übrig. "+ quantity +unit+", "+isOpenString;
+        return getName() + " mit Ablaufdatum "+ bestBeforeDate +", "+timeLeft+" Tage übrig. "+ getQuantity() +unit+", "+isOpenString;
     }
 
 }
