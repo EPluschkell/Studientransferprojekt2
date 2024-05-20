@@ -67,6 +67,52 @@ public class Main {
         return list;
     }
 
+    public static void resetPerishableTable(PerishableList list, String url,String tableName){
+        var sql = "DELETE FROM "+tableName;
+
+        try (var conn = DriverManager.getConnection(url);
+             var pstmt = conn.prepareStatement(sql)) {
+
+
+            // execute the delete statement
+            pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        savePerishableList(list,url,tableName);
+    }
+
+    public static void deleteFromTable(String name, String url, String tableName){
+        var sql = "DELETE FROM "+tableName+" WHERE name LIKE '%"+name+"%'";
+        try (var conn = DriverManager.getConnection(url);
+             var pstmt = conn.prepareStatement(sql)) {
+
+            //pstmt.setString(2, name);
+
+            // execute the delete statement
+            pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+    public static void deleteFromTable(int index, String url, String tableName){
+        var sql = "DELETE FROM "+tableName+" WHERE id = ?";
+
+        try (var conn = DriverManager.getConnection(url);
+             var pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setInt(1, index);
+
+            // execute the delete statement
+            pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
     public static void createTable(String sql, String url){
         try (var conn = DriverManager.getConnection(url);
              var stmt = conn.createStatement()) {
