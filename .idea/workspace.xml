@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="contstructor">
+    <list default="true" id="91be041c-29fa-4d2c-84ff-822f3c13e316" name="Changes" comment="set class variables private, getters added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Studientransferprojekt2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Studientransferprojekt2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PerishableFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PerishableFood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NonPerishable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NonPerishable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/eplus/Java/slf4j-nop-2.0.13.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eplus/Java/slf4j-nop-2.0.13.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="testclass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testclass" />
@@ -111,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714746408498</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="set class variables private, getters added">
+      <created>1716198972342</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716198972342</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +139,7 @@
     <MESSAGE value="small implementation to begin" />
     <MESSAGE value="List classes implementations" />
     <MESSAGE value="contstructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="contstructor" />
+    <MESSAGE value="set class variables private, getters added" />
+    <option name="LAST_COMMIT_MESSAGE" value="set class variables private, getters added" />
   </component>
 </project>

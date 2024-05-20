@@ -25,5 +25,14 @@ public abstract class ItemList<T extends Item> {
             }
         });
     }
+
+    @Override
+    public String toString() {
+        StringBuilder text = new StringBuilder();
+        for (T t : itemList) {
+            text.append("\n").append(t.toString());
+        }
+        return text.toString();
+    }
 }
 
